@@ -1,25 +1,33 @@
 /**
  * Service worker: precache shell, quiz JSON, and all referenced images.
- * Register from /web/ with scope "/" so /images and JSON are cacheable.
+ * Paths are resolved relative to this script so the app works on GitHub Pages
+ * project sites (e.g. /repo-name/) as well as at domain root.
  * Bump CACHE_VERSION after changing cached assets.
  */
-const CACHE_VERSION = "grundkenntnistest-v38";
+const CACHE_VERSION = "grundkenntnistest-v39";
+
+/** Base URL of the directory containing sw.js (trailing slash). */
+const BASE = new URL("./", self.location.href);
+
+function abs(relPath) {
+  const p = String(relPath || "").replace(/^\/+/, "");
+  return new URL(p, BASE).href;
+}
 
 const SHELL = [
-  "/",
-  "/index.html",
-  "/uebersicht.html",
-  "/uebersicht.js",
-  "/fragenkatalog.html",
-  "/fragenkatalog.js",
-  "/styles.css",
-  "/app.js",
-  "/manifest.json",
-  "/icons/icon-192.png",
-  "/icons/icon-512.png",
-  "/grundkenntnistest_kanton_zuerich.json",
-  "/sources/grundkenntnistest_kanton_zuerich.pdf",
-  "/sources/broschuere_einbuergerung_grundkenntnistest.pdf"
+  "index.html",
+  "uebersicht.html",
+  "uebersicht.js",
+  "fragenkatalog.html",
+  "fragenkatalog.js",
+  "styles.css",
+  "app.js",
+  "manifest.json",
+  "icons/icon-192.png",
+  "icons/icon-512.png",
+  "grundkenntnistest_kanton_zuerich.json",
+  "sources/grundkenntnistest_kanton_zuerich.pdf",
+  "sources/broschuere_einbuergerung_grundkenntnistest.pdf",
 ];
 
 function walkStrings(obj, fn) {
@@ -41,7 +49,7 @@ function imageUrlsFromQuiz(data) {
   walkStrings(data, (s) => {
     if (typeof s !== "string") return;
     if (s.startsWith("images/") || s.startsWith("question-images/")) {
-      urls.add("/" + s.replace(/^\/+/, ""));
+      urls.add(abs(s));
     }
   });
   return [...urls];
@@ -63,13 +71,13 @@ async function cacheBatched(cache, urls) {
 
 async function precacheAll() {
   const cache = await caches.open(CACHE_VERSION);
-  for (const url of SHELL) {
-    await cache.add(url).catch((e) => {
-      console.warn("[sw] shell miss", url, e);
+  for (const rel of SHELL) {
+    await cache.add(abs(rel)).catch((e) => {
+      console.warn("[sw] shell miss", rel, e);
     });
   }
 
-  const jsonRes = await caches.match("/grundkenntnistest_kanton_zuerich.json");
+  const jsonRes = await caches.match(abs("grundkenntnistest_kanton_zuerich.json"));
   if (!jsonRes) return;
   let data;
   try {
@@ -105,10 +113,9 @@ self.addEventListener("fetch", (event) => {
   if (request.mode === "navigate") {
     event.respondWith(
       fetch(request).catch(() => {
-        const path = new URL(request.url).pathname;
-        return caches.match(path).then((cached) => {
+        return caches.match(request).then((cached) => {
           if (cached) return cached;
-          return caches.match("/index.html").then((r) => r || Response.error());
+          return caches.match(abs("index.html")).then((r) => r || Response.error());
         });
       })
     );

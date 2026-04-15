@@ -24,8 +24,10 @@ function assetUrl(relativePath) {
 function registerServiceWorker() {
   if (!("serviceWorker" in navigator)) return;
   window.addEventListener("load", () => {
+    const swUrl = new URL("sw.js", location.href);
+    const scope = new URL("./", location.href).href;
     navigator.serviceWorker
-      .register(new URL("/sw.js", location.origin), { scope: "/" })
+      .register(swUrl, { scope })
       .catch((err) => console.warn("SW register failed:", err));
   });
 }
@@ -380,10 +382,7 @@ function extractCategories(data) {
 }
 
 async function loadData() {
-  const candidates = [
-    new URL("grundkenntnistest_kanton_zuerich.json", location.href).href,
-    `${location.origin}/grundkenntnistest_kanton_zuerich.json`,
-  ];
+  const candidates = [new URL("grundkenntnistest_kanton_zuerich.json", location.href).href];
   let lastErr = null;
   for (const url of candidates) {
     try {

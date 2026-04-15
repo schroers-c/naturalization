@@ -15,10 +15,7 @@ function assetUrl(relativePath) {
 }
 
 async function loadData() {
-  const candidates = [
-    new URL("grundkenntnistest_kanton_zuerich.json", location.href).href,
-    `${location.origin}/grundkenntnistest_kanton_zuerich.json`,
-  ];
+  const candidates = [new URL("grundkenntnistest_kanton_zuerich.json", location.href).href];
   let lastErr = null;
   for (const url of candidates) {
     try {
