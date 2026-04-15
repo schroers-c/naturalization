@@ -98,6 +98,57 @@ OPTION_START = re.compile(r"^([a-d])\)\s*(.*)$")
 
 _SUB_NEXT = frozenset({"Bund", "Kanton", "Gemeinde"})
 
+# Image-style options: four labels only, no answer text (often split across lines in the PDF).
+IMAGE_OPTS_ONE_LINE = re.compile(r"^\s*a\)\s*b\)\s*c\)\s*d\)\s*$", re.I)
+IMAGE_OPTS_A_ONLY = re.compile(r"^\s*a\)\s*$", re.I)
+IMAGE_OPTS_BCD_LINE = re.compile(r"^\s*b\)\s*c\)\s*d\)\s*$", re.I)
+
+
+def _skip_blank_lines(lines: list[str], i: int, n: int) -> int:
+    while i < n and not normalize_unicode_dashes(lines[i].strip()):
+        i += 1
+    return i
+
+
+def _qlog(log: list[str], next_qnum: int | None, msg: str) -> None:
+    if next_qnum is not None:
+        log.append(f"PDF question ~{next_qnum}: {msg}")
+    else:
+        log.append(msg)
+
+
+def _finish_image_options_block(
+    stem_parts: list[str],
+    lines: list[str],
+    i_after_opts: int,
+    log: list[str],
+    next_qnum: int | None,
+) -> tuple[dict, int] | None:
+    """After consuming all image-option lines, expect Richtige Antwort."""
+    n = len(lines)
+    i = _skip_blank_lines(lines, i_after_opts, n)
+    if i >= n:
+        _qlog(log, next_qnum, "Expected Richtige Antwort after image options (EOF)")
+        return None
+    ans_line = normalize_unicode_dashes(lines[i].strip())
+    am = re.match(r"^Richtige\s+Antwort:\s*([a-d])\s*$", ans_line, re.I)
+    if not am:
+        _qlog(
+            log,
+            next_qnum,
+            f"Expected Richtige Antwort after image options at line {i + 1}, got: {ans_line[:80]!r}",
+        )
+        return None
+    stem = "\n".join(stem_parts).strip()
+    q: dict = {
+        "question": stem,
+        "options": {"a": None, "b": None, "c": None, "d": None},
+        "correct_answer": am.group(1).lower(),
+        "options_are_images": True,
+        "images": {},
+    }
+    return q, i + 1
+
 
 def merge_split_headings(lines: list[str], log: list[str]) -> list[str]:
     """
@@ -145,7 +196,10 @@ def merge_split_headings(lines: list[str], log: list[str]) -> list[str]:
 
 
 def parse_question_block(
-    lines: list[str], start: int, log: list[str]
+    lines: list[str],
+    start: int,
+    log: list[str],
+    next_qnum: int | None = None,
 ) -> tuple[dict, int] | None:
     """Parse one question starting at line index `start` (stem first line). Returns (question_dict, next_index)."""
     i = start
@@ -163,7 +217,11 @@ def parse_question_block(
             i += 1
             continue
         if parse_main_category(s) or parse_sub_category(s):
-            log.append(f"Unexpected category inside stem at line {i + 1}: {s[:60]}")
+            _qlog(
+                log,
+                next_qnum,
+                f"Unexpected category inside stem at line {i + 1}: {s[:60]}",
+            )
             return None
         if OPTION_START.match(s):
             break
@@ -172,24 +230,38 @@ def parse_question_block(
     if i >= n:
         return None
     opt_first = normalize_unicode_dashes(lines[i].strip())
-    if re.match(r"^a\)\s*b\)\s*c\)\s*d\)\s*$", opt_first, re.I):
-        i += 1
-        if i >= n:
-            return None
-        ans_line = normalize_unicode_dashes(lines[i].strip())
-        am = re.match(r"^Richtige\s+Antwort:\s*([a-d])\s*$", ans_line, re.I)
-        if not am:
-            log.append(f"Expected Richtige Antwort after image options at line {i + 1}")
-            return None
-        stem = "\n".join(stem_parts).strip()
-        q: dict = {
-            "question": stem,
-            "options": {"a": None, "b": None, "c": None, "d": None},
-            "correct_answer": am.group(1).lower(),
-            "options_are_images": True,
-            "images": {},
-        }
-        return q, i + 1
+
+    # Image options: one line a) b) c) d) (leading spaces / flexible gaps)
+    if IMAGE_OPTS_ONE_LINE.match(opt_first):
+        return _finish_image_options_block(stem_parts, lines, i + 1, log, next_qnum)
+
+    # Image options: line "a)" only, then "b) c) d)" on the next non-empty line
+    if IMAGE_OPTS_A_ONLY.match(opt_first):
+        j = _skip_blank_lines(lines, i + 1, n)
+        if j < n:
+            t_bcd = normalize_unicode_dashes(lines[j].strip())
+            if IMAGE_OPTS_BCD_LINE.match(t_bcd):
+                return _finish_image_options_block(
+                    stem_parts, lines, j + 1, log, next_qnum
+                )
+
+    # Image options (map layout): row "a) ... b)", then "c)", then "d)" on separate lines
+    if (
+        re.search(r"a\)", opt_first, re.I)
+        and re.search(r"b\)", opt_first, re.I)
+        and not re.search(r"c\)", opt_first, re.I)
+    ):
+        j = _skip_blank_lines(lines, i + 1, n)
+        if j < n:
+            t_c = normalize_unicode_dashes(lines[j].strip())
+            if re.match(r"^\s*c\)", t_c, re.I):
+                j2 = _skip_blank_lines(lines, j + 1, n)
+                if j2 < n:
+                    t_d = normalize_unicode_dashes(lines[j2].strip())
+                    if re.search(r"d\)", t_d, re.I):
+                        return _finish_image_options_block(
+                            stem_parts, lines, j2 + 1, log, next_qnum
+                        )
 
     m0 = OPTION_START.match(opt_first)
     if not m0:
@@ -201,7 +273,11 @@ def parse_question_block(
             return None
         sm = OPTION_START.match(normalize_unicode_dashes(lines[i].strip()))
         if not sm or sm.group(1) != letter:
-            log.append(f"Expected option {letter}) at line {i + 1}, got: {lines[i][:80]!r}")
+            _qlog(
+                log,
+                next_qnum,
+                f"Expected option {letter}) at line {i + 1}, got: {lines[i][:80]!r}",
+            )
             return None
         parts: list[str] = [sm.group(2).strip()] if sm.group(2).strip() else []
         i += 1
@@ -230,7 +306,11 @@ def parse_question_block(
     ans_line = normalize_unicode_dashes(lines[i].strip())
     am = re.match(r"^Richtige\s+Antwort:\s*([a-d])\s*$", ans_line, re.I)
     if not am:
-        log.append(f"Expected Richtige Antwort at line {i + 1}, got: {ans_line[:80]!r}")
+        _qlog(
+            log,
+            next_qnum,
+            f"Expected Richtige Antwort at line {i + 1}, got: {ans_line[:80]!r}",
+        )
         return None
     correct = am.group(1).lower()
     i += 1
@@ -431,7 +511,7 @@ def parse_document(lines: list[str], log: list[str]) -> tuple[list[dict], int]:
             i += 1
             continue
 
-        parsed = parse_question_block(lines, i, log)
+        parsed = parse_question_block(lines, i, log, q_global + 1)
         if not parsed:
             i += 1
             continue

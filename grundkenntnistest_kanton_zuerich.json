@@ -1,6 +1,6 @@
 {
   "source_pdf": "grundkenntnistest_kanton_zuerich.pdf",
-  "total_questions": 347,
+  "total_questions": 350,
   "categories": [
     {
       "id": "1",
@@ -767,7 +767,27 @@
               "page": 13
             },
             {
-              "question": "Richtige Antwort: c\n\n\n\n\n\n\n\n\n\n\n\nDer Schweizer Bundesstaat besteht aus verschiedenen. . .",
+              "question": "Welche ist die Schweizer Nationalfahne?",
+              "options": {
+                "a": null,
+                "b": null,
+                "c": null,
+                "d": null
+              },
+              "correct_answer": "c",
+              "options_are_images": true,
+              "images": {
+                "a": "images/page013_img01.png",
+                "b": "images/page013_img03.png",
+                "c": "images/page013_img05.png",
+                "d": "images/page013_img07.png"
+              },
+              "number_in_pdf": 55,
+              "page": 13,
+              "note": "Options shown as images in the PDF; see images.* for this page."
+            },
+            {
+              "question": "Der Schweizer Bundesstaat besteht aus verschiedenen. . .",
               "options": {
                 "a": "Bundesländern",
                 "b": "Kantonen.",
@@ -777,8 +797,8 @@
               "correct_answer": "b",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 55,
-              "page": 13
+              "number_in_pdf": 56,
+              "page": 14
             },
             {
               "question": "Wie viele Kantone hat der Schweizer Bundesstaat?",
@@ -791,8 +811,8 @@
               "correct_answer": "b",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 56,
-              "page": 13
+              "number_in_pdf": 57,
+              "page": 14
             },
             {
               "question": "Wie viele politische Gemeinden gibt es in der Schweiz (Stand 2021)?",
@@ -805,8 +825,8 @@
               "correct_answer": "c",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 57,
-              "page": 13
+              "number_in_pdf": 58,
+              "page": 14
             },
             {
               "question": "Die Schweiz ist ein föderalistischer Staat mit drei Staatsebenen. Was\nist die unterste Ebene?",
@@ -819,8 +839,8 @@
               "correct_answer": "b",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 58,
-              "page": 13
+              "number_in_pdf": 59,
+              "page": 14
             },
             {
               "question": "Die Schweiz ist ein föderalistischer Staat mit drei Staatsebenen. Was\nist die oberste Ebene?",
@@ -833,8 +853,8 @@
               "correct_answer": "c",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 59,
-              "page": 13
+              "number_in_pdf": 60,
+              "page": 14
             },
             {
               "question": "Für was ist der Bund zuständig?",
@@ -847,7 +867,7 @@
               "correct_answer": "b",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 60,
+              "number_in_pdf": 61,
               "page": 15
             },
             {
@@ -861,7 +881,7 @@
               "correct_answer": "a",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 61,
+              "number_in_pdf": 62,
               "page": 15
             },
             {
@@ -875,7 +895,7 @@
               "correct_answer": "b",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 62,
+              "number_in_pdf": 63,
               "page": 15
             },
             {
@@ -889,7 +909,7 @@
               "correct_answer": "a",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 63,
+              "number_in_pdf": 64,
               "page": 15
             },
             {
@@ -903,7 +923,7 @@
               "correct_answer": "c",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 64,
+              "number_in_pdf": 65,
               "page": 15
             },
             {
@@ -917,7 +937,7 @@
               "correct_answer": "b",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 65,
+              "number_in_pdf": 66,
               "page": 16
             },
             {
@@ -931,7 +951,7 @@
               "correct_answer": "d",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 66,
+              "number_in_pdf": 67,
               "page": 16
             },
             {
@@ -945,7 +965,7 @@
               "correct_answer": "b",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 67,
+              "number_in_pdf": 68,
               "page": 16
             },
             {
@@ -959,7 +979,7 @@
               "correct_answer": "c",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 68,
+              "number_in_pdf": 69,
               "page": 16
             },
             {
@@ -973,7 +993,7 @@
               "correct_answer": "a",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 69,
+              "number_in_pdf": 70,
               "page": 16
             },
             {
@@ -987,7 +1007,7 @@
               "correct_answer": "c",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 70,
+              "number_in_pdf": 71,
               "page": 17
             },
             {
@@ -1001,7 +1021,7 @@
               "correct_answer": "b",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 71,
+              "number_in_pdf": 72,
               "page": 17
             },
             {
@@ -1015,7 +1035,7 @@
               "correct_answer": "b",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 72,
+              "number_in_pdf": 73,
               "page": 17
             },
             {
@@ -1029,7 +1049,7 @@
               "correct_answer": "c",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 73,
+              "number_in_pdf": 74,
               "page": 17
             },
             {
@@ -1043,7 +1063,7 @@
               "correct_answer": "c",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 74,
+              "number_in_pdf": 75,
               "page": 17
             },
             {
@@ -1057,7 +1077,7 @@
               "correct_answer": "a",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 75,
+              "number_in_pdf": 76,
               "page": 18
             },
             {
@@ -1071,7 +1091,7 @@
               "correct_answer": "b",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 76,
+              "number_in_pdf": 77,
               "page": 18
             },
             {
@@ -1085,7 +1105,7 @@
               "correct_answer": "a",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 77,
+              "number_in_pdf": 78,
               "page": 18
             },
             {
@@ -1099,7 +1119,7 @@
               "correct_answer": "d",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 78,
+              "number_in_pdf": 79,
               "page": 18
             },
             {
@@ -1113,7 +1133,7 @@
               "correct_answer": "b",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 79,
+              "number_in_pdf": 80,
               "page": 18
             },
             {
@@ -1127,7 +1147,7 @@
               "correct_answer": "a",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 80,
+              "number_in_pdf": 81,
               "page": 19
             },
             {
@@ -1141,7 +1161,7 @@
               "correct_answer": "c",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 81,
+              "number_in_pdf": 82,
               "page": 19
             },
             {
@@ -1155,7 +1175,7 @@
               "correct_answer": "b",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 82,
+              "number_in_pdf": 83,
               "page": 19
             },
             {
@@ -1169,7 +1189,7 @@
               "correct_answer": "d",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 83,
+              "number_in_pdf": 84,
               "page": 19
             },
             {
@@ -1183,7 +1203,7 @@
               "correct_answer": "c",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 84,
+              "number_in_pdf": 85,
               "page": 19
             },
             {
@@ -1197,7 +1217,7 @@
               "correct_answer": "b",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 85,
+              "number_in_pdf": 86,
               "page": 20
             },
             {
@@ -1211,7 +1231,7 @@
               "correct_answer": "d",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 86,
+              "number_in_pdf": 87,
               "page": 20
             },
             {
@@ -1225,7 +1245,7 @@
               "correct_answer": "a",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 87,
+              "number_in_pdf": 88,
               "page": 20
             },
             {
@@ -1239,7 +1259,7 @@
               "correct_answer": "b",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 88,
+              "number_in_pdf": 89,
               "page": 20
             },
             {
@@ -1253,7 +1273,7 @@
               "correct_answer": "a",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 89,
+              "number_in_pdf": 90,
               "page": 20
             },
             {
@@ -1267,7 +1287,7 @@
               "correct_answer": "c",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 90,
+              "number_in_pdf": 91,
               "page": 21
             },
             {
@@ -1281,7 +1301,7 @@
               "correct_answer": "a",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 91,
+              "number_in_pdf": 92,
               "page": 21
             },
             {
@@ -1295,7 +1315,7 @@
               "correct_answer": "c",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 92,
+              "number_in_pdf": 93,
               "page": 21
             },
             {
@@ -1309,7 +1329,7 @@
               "correct_answer": "a",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 93,
+              "number_in_pdf": 94,
               "page": 21
             },
             {
@@ -1323,7 +1343,7 @@
               "correct_answer": "a",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 94,
+              "number_in_pdf": 95,
               "page": 21
             },
             {
@@ -1337,7 +1357,7 @@
               "correct_answer": "c",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 95,
+              "number_in_pdf": 96,
               "page": 22
             },
             {
@@ -1351,7 +1371,7 @@
               "correct_answer": "c",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 96,
+              "number_in_pdf": 97,
               "page": 22
             },
             {
@@ -1365,7 +1385,7 @@
               "correct_answer": "d",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 97,
+              "number_in_pdf": 98,
               "page": 22
             },
             {
@@ -1379,7 +1399,7 @@
               "correct_answer": "a",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 98,
+              "number_in_pdf": 99,
               "page": 22
             }
           ]
@@ -1399,7 +1419,7 @@
               "correct_answer": "c",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 99,
+              "number_in_pdf": 100,
               "page": 23
             },
             {
@@ -1413,7 +1433,7 @@
               "correct_answer": "b",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 100,
+              "number_in_pdf": 101,
               "page": 23
             },
             {
@@ -1427,7 +1447,7 @@
               "correct_answer": "a",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 101,
+              "number_in_pdf": 102,
               "page": 23
             },
             {
@@ -1441,7 +1461,7 @@
               "correct_answer": "b",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 102,
+              "number_in_pdf": 103,
               "page": 23
             },
             {
@@ -1455,7 +1475,7 @@
               "correct_answer": "a",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 103,
+              "number_in_pdf": 104,
               "page": 23
             },
             {
@@ -1469,7 +1489,7 @@
               "correct_answer": "b",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 104,
+              "number_in_pdf": 105,
               "page": 24
             },
             {
@@ -1483,7 +1503,7 @@
               "correct_answer": "a",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 105,
+              "number_in_pdf": 106,
               "page": 24
             },
             {
@@ -1497,7 +1517,7 @@
               "correct_answer": "a",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 106,
+              "number_in_pdf": 107,
               "page": 24
             },
             {
@@ -1511,7 +1531,7 @@
               "correct_answer": "d",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 107,
+              "number_in_pdf": 108,
               "page": 24
             },
             {
@@ -1525,11 +1545,31 @@
               "correct_answer": "b",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 108,
+              "number_in_pdf": 109,
               "page": 24
             },
             {
-              "question": "Richtige Antwort: c\n\nWie viele Personen sind für den Kanton Zürich im Ständerat?",
+              "question": "Welches ist das Wappen des Kantons Zürich?",
+              "options": {
+                "a": null,
+                "b": null,
+                "c": null,
+                "d": null
+              },
+              "correct_answer": "c",
+              "options_are_images": true,
+              "images": {
+                "a": "images/page025_img03.png",
+                "b": "images/page025_img02.png",
+                "c": "images/page025_img04.png",
+                "d": "images/page025_img01.png"
+              },
+              "number_in_pdf": 110,
+              "page": 25,
+              "note": "Options shown as images in the PDF; see images.* for this page."
+            },
+            {
+              "question": "Wie viele Personen sind für den Kanton Zürich im Ständerat?",
               "options": {
                 "a": "13",
                 "b": "5",
@@ -1539,7 +1579,7 @@
               "correct_answer": "c",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 109,
+              "number_in_pdf": 111,
               "page": 25
             },
             {
@@ -1553,7 +1593,7 @@
               "correct_answer": "c",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 110,
+              "number_in_pdf": 112,
               "page": 25
             },
             {
@@ -1567,7 +1607,7 @@
               "correct_answer": "d",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 111,
+              "number_in_pdf": 113,
               "page": 25
             },
             {
@@ -1581,7 +1621,7 @@
               "correct_answer": "b",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 112,
+              "number_in_pdf": 114,
               "page": 26
             },
             {
@@ -1595,7 +1635,7 @@
               "correct_answer": "c",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 113,
+              "number_in_pdf": 115,
               "page": 26
             },
             {
@@ -1609,7 +1649,7 @@
               "correct_answer": "a",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 114,
+              "number_in_pdf": 116,
               "page": 26
             }
           ]
@@ -1629,7 +1669,7 @@
               "correct_answer": "a",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 115,
+              "number_in_pdf": 117,
               "page": 27
             },
             {
@@ -1643,7 +1683,7 @@
               "correct_answer": "d",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 116,
+              "number_in_pdf": 118,
               "page": 27
             },
             {
@@ -1657,7 +1697,7 @@
               "correct_answer": "d",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 117,
+              "number_in_pdf": 119,
               "page": 27
             },
             {
@@ -1671,7 +1711,7 @@
               "correct_answer": "b",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 118,
+              "number_in_pdf": 120,
               "page": 27
             },
             {
@@ -1685,7 +1725,7 @@
               "correct_answer": "c",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 119,
+              "number_in_pdf": 121,
               "page": 27
             },
             {
@@ -1699,7 +1739,7 @@
               "correct_answer": "b",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 120,
+              "number_in_pdf": 122,
               "page": 28
             },
             {
@@ -1713,7 +1753,7 @@
               "correct_answer": "d",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 121,
+              "number_in_pdf": 123,
               "page": 28
             },
             {
@@ -1727,7 +1767,7 @@
               "correct_answer": "b",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 122,
+              "number_in_pdf": 124,
               "page": 28
             },
             {
@@ -1741,7 +1781,7 @@
               "correct_answer": "d",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 123,
+              "number_in_pdf": 125,
               "page": 28
             },
             {
@@ -1755,7 +1795,7 @@
               "correct_answer": "b",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 124,
+              "number_in_pdf": 126,
               "page": 28
             },
             {
@@ -1769,7 +1809,7 @@
               "correct_answer": "d",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 125,
+              "number_in_pdf": 127,
               "page": 29
             }
           ]
@@ -1795,7 +1835,7 @@
               "correct_answer": "b",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 126,
+              "number_in_pdf": 128,
               "page": 29
             },
             {
@@ -1809,7 +1849,7 @@
               "correct_answer": "d",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 127,
+              "number_in_pdf": 129,
               "page": 29
             },
             {
@@ -1823,7 +1863,7 @@
               "correct_answer": "d",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 128,
+              "number_in_pdf": 130,
               "page": 29
             },
             {
@@ -1837,7 +1877,7 @@
               "correct_answer": "c",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 129,
+              "number_in_pdf": 131,
               "page": 30
             },
             {
@@ -1851,7 +1891,7 @@
               "correct_answer": "c",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 130,
+              "number_in_pdf": 132,
               "page": 30
             },
             {
@@ -1865,7 +1905,7 @@
               "correct_answer": "b",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 131,
+              "number_in_pdf": 133,
               "page": 30
             },
             {
@@ -1879,7 +1919,7 @@
               "correct_answer": "c",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 132,
+              "number_in_pdf": 134,
               "page": 30
             },
             {
@@ -1893,7 +1933,7 @@
               "correct_answer": "a",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 133,
+              "number_in_pdf": 135,
               "page": 31
             },
             {
@@ -1907,7 +1947,7 @@
               "correct_answer": "a",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 134,
+              "number_in_pdf": 136,
               "page": 31
             },
             {
@@ -1921,7 +1961,7 @@
               "correct_answer": "b",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 135,
+              "number_in_pdf": 137,
               "page": 31
             },
             {
@@ -1935,7 +1975,7 @@
               "correct_answer": "c",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 136,
+              "number_in_pdf": 138,
               "page": 31
             },
             {
@@ -1949,7 +1989,7 @@
               "correct_answer": "d",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 137,
+              "number_in_pdf": 139,
               "page": 31
             },
             {
@@ -1963,7 +2003,7 @@
               "correct_answer": "b",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 138,
+              "number_in_pdf": 140,
               "page": 32
             },
             {
@@ -1977,7 +2017,7 @@
               "correct_answer": "a",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 139,
+              "number_in_pdf": 141,
               "page": 32
             },
             {
@@ -1991,7 +2031,7 @@
               "correct_answer": "d",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 140,
+              "number_in_pdf": 142,
               "page": 32
             },
             {
@@ -2005,7 +2045,7 @@
               "correct_answer": "b",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 141,
+              "number_in_pdf": 143,
               "page": 32
             },
             {
@@ -2019,7 +2059,7 @@
               "correct_answer": "a",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 142,
+              "number_in_pdf": 144,
               "page": 32
             },
             {
@@ -2033,7 +2073,7 @@
               "correct_answer": "a",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 143,
+              "number_in_pdf": 145,
               "page": 33
             },
             {
@@ -2047,7 +2087,7 @@
               "correct_answer": "d",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 144,
+              "number_in_pdf": 146,
               "page": 33
             },
             {
@@ -2061,7 +2101,7 @@
               "correct_answer": "a",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 145,
+              "number_in_pdf": 147,
               "page": 33
             },
             {
@@ -2075,7 +2115,7 @@
               "correct_answer": "d",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 146,
+              "number_in_pdf": 148,
               "page": 33
             },
             {
@@ -2089,7 +2129,7 @@
               "correct_answer": "d",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 147,
+              "number_in_pdf": 149,
               "page": 33
             },
             {
@@ -2103,7 +2143,7 @@
               "correct_answer": "c",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 148,
+              "number_in_pdf": 150,
               "page": 34
             },
             {
@@ -2117,7 +2157,7 @@
               "correct_answer": "b",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 149,
+              "number_in_pdf": 151,
               "page": 34
             },
             {
@@ -2131,7 +2171,7 @@
               "correct_answer": "b",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 150,
+              "number_in_pdf": 152,
               "page": 34
             },
             {
@@ -2145,7 +2185,7 @@
               "correct_answer": "a",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 151,
+              "number_in_pdf": 153,
               "page": 34
             },
             {
@@ -2159,7 +2199,7 @@
               "correct_answer": "d",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 152,
+              "number_in_pdf": 154,
               "page": 34
             },
             {
@@ -2173,7 +2213,7 @@
               "correct_answer": "d",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 153,
+              "number_in_pdf": 155,
               "page": 35
             },
             {
@@ -2187,7 +2227,7 @@
               "correct_answer": "b",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 154,
+              "number_in_pdf": 156,
               "page": 35
             },
             {
@@ -2201,7 +2241,7 @@
               "correct_answer": "b",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 155,
+              "number_in_pdf": 157,
               "page": 35
             },
             {
@@ -2215,7 +2255,7 @@
               "correct_answer": "b",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 156,
+              "number_in_pdf": 158,
               "page": 35
             },
             {
@@ -2229,7 +2269,7 @@
               "correct_answer": "a",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 157,
+              "number_in_pdf": 159,
               "page": 35
             },
             {
@@ -2243,7 +2283,7 @@
               "correct_answer": "c",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 158,
+              "number_in_pdf": 160,
               "page": 36
             },
             {
@@ -2257,7 +2297,7 @@
               "correct_answer": "a",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 159,
+              "number_in_pdf": 161,
               "page": 36
             },
             {
@@ -2271,7 +2311,7 @@
               "correct_answer": "b",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 160,
+              "number_in_pdf": 162,
               "page": 36
             },
             {
@@ -2285,7 +2325,7 @@
               "correct_answer": "c",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 161,
+              "number_in_pdf": 163,
               "page": 36
             },
             {
@@ -2299,7 +2339,7 @@
               "correct_answer": "d",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 162,
+              "number_in_pdf": 164,
               "page": 36
             },
             {
@@ -2313,7 +2353,7 @@
               "correct_answer": "c",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 163,
+              "number_in_pdf": 165,
               "page": 37
             },
             {
@@ -2327,7 +2367,7 @@
               "correct_answer": "b",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 164,
+              "number_in_pdf": 166,
               "page": 37
             },
             {
@@ -2341,7 +2381,7 @@
               "correct_answer": "b",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 165,
+              "number_in_pdf": 167,
               "page": 37
             },
             {
@@ -2355,7 +2395,7 @@
               "correct_answer": "a",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 166,
+              "number_in_pdf": 168,
               "page": 37
             },
             {
@@ -2369,7 +2409,7 @@
               "correct_answer": "d",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 167,
+              "number_in_pdf": 169,
               "page": 38
             },
             {
@@ -2383,7 +2423,7 @@
               "correct_answer": "b",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 168,
+              "number_in_pdf": 170,
               "page": 38
             },
             {
@@ -2397,7 +2437,7 @@
               "correct_answer": "d",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 169,
+              "number_in_pdf": 171,
               "page": 38
             },
             {
@@ -2411,7 +2451,7 @@
               "correct_answer": "c",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 170,
+              "number_in_pdf": 172,
               "page": 38
             },
             {
@@ -2425,7 +2465,7 @@
               "correct_answer": "b",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 171,
+              "number_in_pdf": 173,
               "page": 39
             },
             {
@@ -2439,7 +2479,7 @@
               "correct_answer": "a",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 172,
+              "number_in_pdf": 174,
               "page": 39
             },
             {
@@ -2453,7 +2493,7 @@
               "correct_answer": "c",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 173,
+              "number_in_pdf": 175,
               "page": 39
             },
             {
@@ -2467,7 +2507,7 @@
               "correct_answer": "b",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 174,
+              "number_in_pdf": 176,
               "page": 39
             },
             {
@@ -2481,7 +2521,7 @@
               "correct_answer": "d",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 175,
+              "number_in_pdf": 177,
               "page": 39
             },
             {
@@ -2495,7 +2535,7 @@
               "correct_answer": "a",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 176,
+              "number_in_pdf": 178,
               "page": 40
             },
             {
@@ -2509,7 +2549,7 @@
               "correct_answer": "b",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 177,
+              "number_in_pdf": 179,
               "page": 40
             },
             {
@@ -2523,7 +2563,7 @@
               "correct_answer": "c",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 178,
+              "number_in_pdf": 180,
               "page": 40
             },
             {
@@ -2537,7 +2577,7 @@
               "correct_answer": "d",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 179,
+              "number_in_pdf": 181,
               "page": 40
             },
             {
@@ -2551,7 +2591,7 @@
               "correct_answer": "c",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 180,
+              "number_in_pdf": 182,
               "page": 40
             },
             {
@@ -2565,7 +2605,7 @@
               "correct_answer": "b",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 181,
+              "number_in_pdf": 183,
               "page": 41
             },
             {
@@ -2579,7 +2619,7 @@
               "correct_answer": "b",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 182,
+              "number_in_pdf": 184,
               "page": 41
             },
             {
@@ -2593,7 +2633,7 @@
               "correct_answer": "c",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 183,
+              "number_in_pdf": 185,
               "page": 41
             },
             {
@@ -2607,7 +2647,7 @@
               "correct_answer": "c",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 184,
+              "number_in_pdf": 186,
               "page": 41
             },
             {
@@ -2621,7 +2661,7 @@
               "correct_answer": "b",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 185,
+              "number_in_pdf": 187,
               "page": 41
             },
             {
@@ -2635,7 +2675,7 @@
               "correct_answer": "c",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 186,
+              "number_in_pdf": 188,
               "page": 42
             },
             {
@@ -2649,7 +2689,7 @@
               "correct_answer": "d",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 187,
+              "number_in_pdf": 189,
               "page": 42
             },
             {
@@ -2663,7 +2703,7 @@
               "correct_answer": "b",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 188,
+              "number_in_pdf": 190,
               "page": 42
             },
             {
@@ -2677,7 +2717,7 @@
               "correct_answer": "d",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 189,
+              "number_in_pdf": 191,
               "page": 42
             },
             {
@@ -2691,7 +2731,7 @@
               "correct_answer": "c",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 190,
+              "number_in_pdf": 192,
               "page": 42
             },
             {
@@ -2705,7 +2745,7 @@
               "correct_answer": "c",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 191,
+              "number_in_pdf": 193,
               "page": 43
             },
             {
@@ -2719,7 +2759,7 @@
               "correct_answer": "c",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 192,
+              "number_in_pdf": 194,
               "page": 43
             },
             {
@@ -2733,7 +2773,7 @@
               "correct_answer": "c",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 193,
+              "number_in_pdf": 195,
               "page": 43
             }
           ]
@@ -2753,7 +2793,7 @@
               "correct_answer": "a",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 194,
+              "number_in_pdf": 196,
               "page": 43
             },
             {
@@ -2767,7 +2807,7 @@
               "correct_answer": "d",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 195,
+              "number_in_pdf": 197,
               "page": 44
             },
             {
@@ -2781,7 +2821,7 @@
               "correct_answer": "b",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 196,
+              "number_in_pdf": 198,
               "page": 44
             },
             {
@@ -2795,7 +2835,7 @@
               "correct_answer": "a",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 197,
+              "number_in_pdf": 199,
               "page": 44
             }
           ]
@@ -2815,7 +2855,7 @@
               "correct_answer": "b",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 198,
+              "number_in_pdf": 200,
               "page": 44
             },
             {
@@ -2829,7 +2869,7 @@
               "correct_answer": "d",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 199,
+              "number_in_pdf": 201,
               "page": 45
             },
             {
@@ -2843,7 +2883,7 @@
               "correct_answer": "c",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 200,
+              "number_in_pdf": 202,
               "page": 45
             },
             {
@@ -2857,7 +2897,7 @@
               "correct_answer": "a",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 201,
+              "number_in_pdf": 203,
               "page": 45
             },
             {
@@ -2871,7 +2911,7 @@
               "correct_answer": "a",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 202,
+              "number_in_pdf": 204,
               "page": 45
             },
             {
@@ -2885,7 +2925,7 @@
               "correct_answer": "b",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 203,
+              "number_in_pdf": 205,
               "page": 46
             },
             {
@@ -2899,7 +2939,7 @@
               "correct_answer": "c",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 204,
+              "number_in_pdf": 206,
               "page": 46
             },
             {
@@ -2913,7 +2953,7 @@
               "correct_answer": "d",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 205,
+              "number_in_pdf": 207,
               "page": 46
             },
             {
@@ -2927,7 +2967,7 @@
               "correct_answer": "b",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 206,
+              "number_in_pdf": 208,
               "page": 46
             }
           ]
@@ -2953,7 +2993,7 @@
               "correct_answer": "d",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 207,
+              "number_in_pdf": 209,
               "page": 47
             },
             {
@@ -2967,7 +3007,7 @@
               "correct_answer": "d",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 208,
+              "number_in_pdf": 210,
               "page": 47
             },
             {
@@ -2981,7 +3021,7 @@
               "correct_answer": "a",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 209,
+              "number_in_pdf": 211,
               "page": 47
             },
             {
@@ -2995,7 +3035,7 @@
               "correct_answer": "d",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 210,
+              "number_in_pdf": 212,
               "page": 47
             },
             {
@@ -3009,7 +3049,7 @@
               "correct_answer": "a",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 211,
+              "number_in_pdf": 213,
               "page": 48
             },
             {
@@ -3023,7 +3063,7 @@
               "correct_answer": "c",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 212,
+              "number_in_pdf": 214,
               "page": 48
             },
             {
@@ -3037,7 +3077,7 @@
               "correct_answer": "b",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 213,
+              "number_in_pdf": 215,
               "page": 48
             },
             {
@@ -3051,7 +3091,7 @@
               "correct_answer": "b",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 214,
+              "number_in_pdf": 216,
               "page": 48
             },
             {
@@ -3065,7 +3105,7 @@
               "correct_answer": "b",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 215,
+              "number_in_pdf": 217,
               "page": 48
             },
             {
@@ -3079,7 +3119,7 @@
               "correct_answer": "c",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 216,
+              "number_in_pdf": 218,
               "page": 49
             },
             {
@@ -3093,7 +3133,7 @@
               "correct_answer": "c",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 217,
+              "number_in_pdf": 219,
               "page": 49
             },
             {
@@ -3107,7 +3147,7 @@
               "correct_answer": "c",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 218,
+              "number_in_pdf": 220,
               "page": 49
             },
             {
@@ -3121,7 +3161,7 @@
               "correct_answer": "a",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 219,
+              "number_in_pdf": 221,
               "page": 49
             },
             {
@@ -3135,7 +3175,7 @@
               "correct_answer": "a",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 220,
+              "number_in_pdf": 222,
               "page": 50
             },
             {
@@ -3149,7 +3189,7 @@
               "correct_answer": "d",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 221,
+              "number_in_pdf": 223,
               "page": 50
             },
             {
@@ -3163,7 +3203,7 @@
               "correct_answer": "c",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 222,
+              "number_in_pdf": 224,
               "page": 50
             },
             {
@@ -3177,7 +3217,7 @@
               "correct_answer": "d",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 223,
+              "number_in_pdf": 225,
               "page": 50
             },
             {
@@ -3191,7 +3231,7 @@
               "correct_answer": "d",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 224,
+              "number_in_pdf": 226,
               "page": 50
             },
             {
@@ -3205,7 +3245,7 @@
               "correct_answer": "a",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 225,
+              "number_in_pdf": 227,
               "page": 51
             },
             {
@@ -3219,7 +3259,7 @@
               "correct_answer": "c",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 226,
+              "number_in_pdf": 228,
               "page": 51
             },
             {
@@ -3233,9 +3273,9 @@
               "correct_answer": "b",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 227,
+              "number_in_pdf": 229,
               "page": 51,
-              "question_image": "question-images/227.png"
+              "question_image": "question-images/229.png"
             },
             {
               "question": "Im Jahr 1515 verloren die Eidgenossen die Schlacht bei Marignano.\nWelche Folgen hatte diese Niederlage?",
@@ -3248,7 +3288,7 @@
               "correct_answer": "a",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 228,
+              "number_in_pdf": 230,
               "page": 52
             },
             {
@@ -3262,7 +3302,7 @@
               "correct_answer": "d",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 229,
+              "number_in_pdf": 231,
               "page": 52
             },
             {
@@ -3276,7 +3316,7 @@
               "correct_answer": "b",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 230,
+              "number_in_pdf": 232,
               "page": 52
             },
             {
@@ -3290,7 +3330,7 @@
               "correct_answer": "c",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 231,
+              "number_in_pdf": 233,
               "page": 52
             },
             {
@@ -3304,7 +3344,7 @@
               "correct_answer": "a",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 232,
+              "number_in_pdf": 234,
               "page": 52
             },
             {
@@ -3318,7 +3358,7 @@
               "correct_answer": "b",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 233,
+              "number_in_pdf": 235,
               "page": 53
             },
             {
@@ -3332,7 +3372,7 @@
               "correct_answer": "c",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 234,
+              "number_in_pdf": 236,
               "page": 53
             },
             {
@@ -3346,7 +3386,7 @@
               "correct_answer": "b",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 235,
+              "number_in_pdf": 237,
               "page": 53
             },
             {
@@ -3360,7 +3400,7 @@
               "correct_answer": "c",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 236,
+              "number_in_pdf": 238,
               "page": 53
             },
             {
@@ -3374,7 +3414,7 @@
               "correct_answer": "c",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 237,
+              "number_in_pdf": 239,
               "page": 54
             },
             {
@@ -3388,7 +3428,7 @@
               "correct_answer": "d",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 238,
+              "number_in_pdf": 240,
               "page": 54
             },
             {
@@ -3402,7 +3442,7 @@
               "correct_answer": "b",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 239,
+              "number_in_pdf": 241,
               "page": 54
             },
             {
@@ -3416,7 +3456,7 @@
               "correct_answer": "a",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 240,
+              "number_in_pdf": 242,
               "page": 54
             },
             {
@@ -3430,7 +3470,7 @@
               "correct_answer": "b",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 241,
+              "number_in_pdf": 243,
               "page": 54
             },
             {
@@ -3444,7 +3484,7 @@
               "correct_answer": "c",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 242,
+              "number_in_pdf": 244,
               "page": 55
             },
             {
@@ -3458,7 +3498,7 @@
               "correct_answer": "b",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 243,
+              "number_in_pdf": 245,
               "page": 55
             },
             {
@@ -3472,7 +3512,7 @@
               "correct_answer": "c",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 244,
+              "number_in_pdf": 246,
               "page": 55
             }
           ]
@@ -3492,7 +3532,7 @@
               "correct_answer": "d",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 245,
+              "number_in_pdf": 247,
               "page": 55
             },
             {
@@ -3506,7 +3546,7 @@
               "correct_answer": "d",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 246,
+              "number_in_pdf": 248,
               "page": 56
             },
             {
@@ -3520,7 +3560,7 @@
               "correct_answer": "a",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 247,
+              "number_in_pdf": 249,
               "page": 56
             },
             {
@@ -3534,7 +3574,7 @@
               "correct_answer": "b",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 248,
+              "number_in_pdf": 250,
               "page": 56
             },
             {
@@ -3548,7 +3588,7 @@
               "correct_answer": "a",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 249,
+              "number_in_pdf": 251,
               "page": 56
             },
             {
@@ -3562,7 +3602,7 @@
               "correct_answer": "a",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 250,
+              "number_in_pdf": 252,
               "page": 56
             },
             {
@@ -3576,7 +3616,7 @@
               "correct_answer": "c",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 251,
+              "number_in_pdf": 253,
               "page": 57
             },
             {
@@ -3590,7 +3630,7 @@
               "correct_answer": "b",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 252,
+              "number_in_pdf": 254,
               "page": 57
             },
             {
@@ -3604,7 +3644,7 @@
               "correct_answer": "b",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 253,
+              "number_in_pdf": 255,
               "page": 57
             },
             {
@@ -3618,7 +3658,7 @@
               "correct_answer": "c",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 254,
+              "number_in_pdf": 256,
               "page": 57
             }
           ]
@@ -3644,7 +3684,7 @@
               "correct_answer": "c",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 255,
+              "number_in_pdf": 257,
               "page": 58
             },
             {
@@ -3658,7 +3698,7 @@
               "correct_answer": "d",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 256,
+              "number_in_pdf": 258,
               "page": 58
             },
             {
@@ -3672,7 +3712,7 @@
               "correct_answer": "a",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 257,
+              "number_in_pdf": 259,
               "page": 58
             },
             {
@@ -3686,7 +3726,7 @@
               "correct_answer": "c",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 258,
+              "number_in_pdf": 260,
               "page": 58
             },
             {
@@ -3700,7 +3740,7 @@
               "correct_answer": "a",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 259,
+              "number_in_pdf": 261,
               "page": 58
             },
             {
@@ -3714,7 +3754,7 @@
               "correct_answer": "a",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 260,
+              "number_in_pdf": 262,
               "page": 59
             },
             {
@@ -3728,7 +3768,7 @@
               "correct_answer": "b",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 261,
+              "number_in_pdf": 263,
               "page": 59
             },
             {
@@ -3742,7 +3782,7 @@
               "correct_answer": "b",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 262,
+              "number_in_pdf": 264,
               "page": 59
             },
             {
@@ -3756,7 +3796,7 @@
               "correct_answer": "a",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 263,
+              "number_in_pdf": 265,
               "page": 59
             },
             {
@@ -3770,7 +3810,7 @@
               "correct_answer": "b",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 264,
+              "number_in_pdf": 266,
               "page": 59
             },
             {
@@ -3784,7 +3824,7 @@
               "correct_answer": "c",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 265,
+              "number_in_pdf": 267,
               "page": 60
             },
             {
@@ -3798,7 +3838,7 @@
               "correct_answer": "a",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 266,
+              "number_in_pdf": 268,
               "page": 60
             },
             {
@@ -3812,7 +3852,7 @@
               "correct_answer": "b",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 267,
+              "number_in_pdf": 269,
               "page": 60
             },
             {
@@ -3826,7 +3866,7 @@
               "correct_answer": "a",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 268,
+              "number_in_pdf": 270,
               "page": 60
             },
             {
@@ -3840,7 +3880,7 @@
               "correct_answer": "a",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 269,
+              "number_in_pdf": 271,
               "page": 60
             },
             {
@@ -3854,7 +3894,7 @@
               "correct_answer": "b",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 270,
+              "number_in_pdf": 272,
               "page": 61
             },
             {
@@ -3868,7 +3908,7 @@
               "correct_answer": "b",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 271,
+              "number_in_pdf": 273,
               "page": 61
             },
             {
@@ -3882,7 +3922,7 @@
               "correct_answer": "c",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 272,
+              "number_in_pdf": 274,
               "page": 61
             },
             {
@@ -3896,7 +3936,7 @@
               "correct_answer": "d",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 273,
+              "number_in_pdf": 275,
               "page": 61
             },
             {
@@ -3910,7 +3950,7 @@
               "correct_answer": "a",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 274,
+              "number_in_pdf": 276,
               "page": 61
             },
             {
@@ -3924,7 +3964,7 @@
               "correct_answer": "c",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 275,
+              "number_in_pdf": 277,
               "page": 62
             },
             {
@@ -3938,7 +3978,7 @@
               "correct_answer": "b",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 276,
+              "number_in_pdf": 278,
               "page": 62
             },
             {
@@ -3952,8 +3992,9 @@
               "correct_answer": "c",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 277,
-              "page": 62
+              "number_in_pdf": 279,
+              "page": 62,
+              "question_image": "question-images/matterhorn.png"
             },
             {
               "question": "Welcher Kanton hat die grösste Fläche?",
@@ -3966,7 +4007,7 @@
               "correct_answer": "b",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 278,
+              "number_in_pdf": 280,
               "page": 62
             },
             {
@@ -3980,9 +4021,8 @@
               "correct_answer": "d",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 279,
-              "page": 63,
-              "question_image": "question-images/matterhorn.png"
+              "number_in_pdf": 281,
+              "page": 63
             },
             {
               "question": "Wie gross ist der Anteil der ausländischen Wohnbevölkerung in der\nSchweiz (Stand 2020)?",
@@ -3995,7 +4035,7 @@
               "correct_answer": "c",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 280,
+              "number_in_pdf": 282,
               "page": 63
             },
             {
@@ -4009,7 +4049,7 @@
               "correct_answer": "b",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 281,
+              "number_in_pdf": 283,
               "page": 63
             },
             {
@@ -4023,7 +4063,7 @@
               "correct_answer": "d",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 282,
+              "number_in_pdf": 284,
               "page": 63
             },
             {
@@ -4037,7 +4077,7 @@
               "correct_answer": "b",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 283,
+              "number_in_pdf": 285,
               "page": 63
             },
             {
@@ -4051,7 +4091,7 @@
               "correct_answer": "c",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 284,
+              "number_in_pdf": 286,
               "page": 64
             },
             {
@@ -4065,7 +4105,7 @@
               "correct_answer": "d",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 285,
+              "number_in_pdf": 287,
               "page": 64
             },
             {
@@ -4079,7 +4119,7 @@
               "correct_answer": "a",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 286,
+              "number_in_pdf": 288,
               "page": 64
             }
           ]
@@ -4089,7 +4129,27 @@
           "title": "Kanton",
           "questions": [
             {
-              "question": "Richtige Antwort: b\n\nKarten: © BFS, Webseite Statistik Schweiz\nGeografisch gehört der Kanton Zürich ...",
+              "question": "Wo liegt der Kanton Zürich?",
+              "options": {
+                "a": null,
+                "b": null,
+                "c": null,
+                "d": null
+              },
+              "correct_answer": "b",
+              "options_are_images": true,
+              "images": {
+                "a": "images/page065_img08.png",
+                "b": "images/page065_img06.png",
+                "c": "images/page065_img04.png",
+                "d": "images/page065_img02.png"
+              },
+              "number_in_pdf": 289,
+              "page": 65,
+              "note": "Options shown as images in the PDF; see images.* for this page."
+            },
+            {
+              "question": "Karten: © BFS, Webseite Statistik Schweiz\nGeografisch gehört der Kanton Zürich ...",
               "options": {
                 "a": "zum Jura.",
                 "b": "zur Seenplatte.",
@@ -4099,7 +4159,7 @@
               "correct_answer": "c",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 287,
+              "number_in_pdf": 290,
               "page": 65
             },
             {
@@ -4113,7 +4173,7 @@
               "correct_answer": "c",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 288,
+              "number_in_pdf": 291,
               "page": 66
             },
             {
@@ -4127,7 +4187,7 @@
               "correct_answer": "a",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 289,
+              "number_in_pdf": 292,
               "page": 66
             },
             {
@@ -4141,7 +4201,7 @@
               "correct_answer": "d",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 290,
+              "number_in_pdf": 293,
               "page": 66
             },
             {
@@ -4155,7 +4215,7 @@
               "correct_answer": "c",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 291,
+              "number_in_pdf": 294,
               "page": 66
             },
             {
@@ -4169,7 +4229,7 @@
               "correct_answer": "b",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 292,
+              "number_in_pdf": 295,
               "page": 66
             },
             {
@@ -4183,7 +4243,7 @@
               "correct_answer": "d",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 293,
+              "number_in_pdf": 296,
               "page": 67
             },
             {
@@ -4197,7 +4257,7 @@
               "correct_answer": "a",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 294,
+              "number_in_pdf": 297,
               "page": 67
             },
             {
@@ -4211,7 +4271,7 @@
               "correct_answer": "d",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 295,
+              "number_in_pdf": 298,
               "page": 67
             },
             {
@@ -4225,7 +4285,7 @@
               "correct_answer": "a",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 296,
+              "number_in_pdf": 299,
               "page": 67
             },
             {
@@ -4239,7 +4299,7 @@
               "correct_answer": "a",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 297,
+              "number_in_pdf": 300,
               "page": 67
             },
             {
@@ -4253,7 +4313,7 @@
               "correct_answer": "d",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 298,
+              "number_in_pdf": 301,
               "page": 68
             },
             {
@@ -4267,7 +4327,7 @@
               "correct_answer": "a",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 299,
+              "number_in_pdf": 302,
               "page": 68
             },
             {
@@ -4281,7 +4341,7 @@
               "correct_answer": "d",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 300,
+              "number_in_pdf": 303,
               "page": 68
             },
             {
@@ -4295,7 +4355,7 @@
               "correct_answer": "b",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 301,
+              "number_in_pdf": 304,
               "page": 68
             }
           ]
@@ -4321,7 +4381,7 @@
               "correct_answer": "b",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 302,
+              "number_in_pdf": 305,
               "page": 69
             },
             {
@@ -4335,7 +4395,7 @@
               "correct_answer": "a",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 303,
+              "number_in_pdf": 306,
               "page": 69
             },
             {
@@ -4349,7 +4409,7 @@
               "correct_answer": "c",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 304,
+              "number_in_pdf": 307,
               "page": 69
             },
             {
@@ -4363,7 +4423,7 @@
               "correct_answer": "c",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 305,
+              "number_in_pdf": 308,
               "page": 69
             },
             {
@@ -4377,7 +4437,7 @@
               "correct_answer": "b",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 306,
+              "number_in_pdf": 309,
               "page": 70
             },
             {
@@ -4391,7 +4451,7 @@
               "correct_answer": "a",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 307,
+              "number_in_pdf": 310,
               "page": 70
             },
             {
@@ -4405,7 +4465,7 @@
               "correct_answer": "c",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 308,
+              "number_in_pdf": 311,
               "page": 70
             },
             {
@@ -4419,7 +4479,7 @@
               "correct_answer": "b",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 309,
+              "number_in_pdf": 312,
               "page": 70
             },
             {
@@ -4433,7 +4493,7 @@
               "correct_answer": "b",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 310,
+              "number_in_pdf": 313,
               "page": 70
             },
             {
@@ -4447,7 +4507,7 @@
               "correct_answer": "a",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 311,
+              "number_in_pdf": 314,
               "page": 71
             },
             {
@@ -4461,7 +4521,7 @@
               "correct_answer": "c",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 312,
+              "number_in_pdf": 315,
               "page": 71
             },
             {
@@ -4475,7 +4535,7 @@
               "correct_answer": "d",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 313,
+              "number_in_pdf": 316,
               "page": 71
             },
             {
@@ -4489,7 +4549,7 @@
               "correct_answer": "a",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 314,
+              "number_in_pdf": 317,
               "page": 71
             },
             {
@@ -4503,7 +4563,7 @@
               "correct_answer": "d",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 315,
+              "number_in_pdf": 318,
               "page": 71
             },
             {
@@ -4517,7 +4577,7 @@
               "correct_answer": "b",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 316,
+              "number_in_pdf": 319,
               "page": 72
             },
             {
@@ -4531,7 +4591,7 @@
               "correct_answer": "a",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 317,
+              "number_in_pdf": 320,
               "page": 72
             },
             {
@@ -4545,7 +4605,7 @@
               "correct_answer": "b",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 318,
+              "number_in_pdf": 321,
               "page": 72
             },
             {
@@ -4559,7 +4619,7 @@
               "correct_answer": "b",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 319,
+              "number_in_pdf": 322,
               "page": 72
             },
             {
@@ -4573,7 +4633,7 @@
               "correct_answer": "b",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 320,
+              "number_in_pdf": 323,
               "page": 72
             },
             {
@@ -4587,7 +4647,7 @@
               "correct_answer": "b",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 321,
+              "number_in_pdf": 324,
               "page": 73
             },
             {
@@ -4601,7 +4661,7 @@
               "correct_answer": "c",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 322,
+              "number_in_pdf": 325,
               "page": 73
             },
             {
@@ -4615,7 +4675,7 @@
               "correct_answer": "c",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 323,
+              "number_in_pdf": 326,
               "page": 73
             },
             {
@@ -4629,7 +4689,7 @@
               "correct_answer": "a",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 324,
+              "number_in_pdf": 327,
               "page": 73
             },
             {
@@ -4643,7 +4703,7 @@
               "correct_answer": "a",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 325,
+              "number_in_pdf": 328,
               "page": 73
             },
             {
@@ -4657,7 +4717,7 @@
               "correct_answer": "b",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 326,
+              "number_in_pdf": 329,
               "page": 74
             },
             {
@@ -4671,7 +4731,7 @@
               "correct_answer": "c",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 327,
+              "number_in_pdf": 330,
               "page": 74
             },
             {
@@ -4685,7 +4745,7 @@
               "correct_answer": "b",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 328,
+              "number_in_pdf": 331,
               "page": 74
             },
             {
@@ -4699,7 +4759,7 @@
               "correct_answer": "d",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 329,
+              "number_in_pdf": 332,
               "page": 74
             },
             {
@@ -4713,7 +4773,7 @@
               "correct_answer": "d",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 330,
+              "number_in_pdf": 333,
               "page": 75
             },
             {
@@ -4727,7 +4787,7 @@
               "correct_answer": "c",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 331,
+              "number_in_pdf": 334,
               "page": 75
             },
             {
@@ -4741,7 +4801,7 @@
               "correct_answer": "a",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 332,
+              "number_in_pdf": 335,
               "page": 75
             },
             {
@@ -4755,7 +4815,7 @@
               "correct_answer": "b",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 333,
+              "number_in_pdf": 336,
               "page": 75
             },
             {
@@ -4769,7 +4829,7 @@
               "correct_answer": "d",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 334,
+              "number_in_pdf": 337,
               "page": 76
             },
             {
@@ -4783,7 +4843,7 @@
               "correct_answer": "c",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 335,
+              "number_in_pdf": 338,
               "page": 76
             },
             {
@@ -4797,7 +4857,7 @@
               "correct_answer": "c",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 336,
+              "number_in_pdf": 339,
               "page": 76
             },
             {
@@ -4811,7 +4871,7 @@
               "correct_answer": "a",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 337,
+              "number_in_pdf": 340,
               "page": 76
             },
             {
@@ -4825,7 +4885,7 @@
               "correct_answer": "d",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 338,
+              "number_in_pdf": 341,
               "page": 76
             }
           ]
@@ -4845,7 +4905,7 @@
               "correct_answer": "b",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 339,
+              "number_in_pdf": 342,
               "page": 77
             },
             {
@@ -4859,7 +4919,7 @@
               "correct_answer": "a",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 340,
+              "number_in_pdf": 343,
               "page": 77
             },
             {
@@ -4873,7 +4933,7 @@
               "correct_answer": "a",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 341,
+              "number_in_pdf": 344,
               "page": 77
             },
             {
@@ -4887,7 +4947,7 @@
               "correct_answer": "a",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 342,
+              "number_in_pdf": 345,
               "page": 77
             },
             {
@@ -4901,7 +4961,7 @@
               "correct_answer": "b",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 343,
+              "number_in_pdf": 346,
               "page": 77
             },
             {
@@ -4915,7 +4975,7 @@
               "correct_answer": "c",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 344,
+              "number_in_pdf": 347,
               "page": 78
             },
             {
@@ -4929,7 +4989,7 @@
               "correct_answer": "a",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 345,
+              "number_in_pdf": 348,
               "page": 78
             },
             {
@@ -4943,7 +5003,7 @@
               "correct_answer": "d",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 346,
+              "number_in_pdf": 349,
               "page": 78
             },
             {
@@ -4957,7 +5017,7 @@
               "correct_answer": "b",
               "options_are_images": false,
               "images": {},
-              "number_in_pdf": 347,
+              "number_in_pdf": 350,
               "page": 78
             }
           ]
@@ -4965,15 +5025,5 @@
       ]
     }
   ],
-  "extraction_notes": [
-    "Expected option c) at line 581, got: 'Richtige Antwort: c '",
-    "Expected option c) at line 581, got: 'Richtige Antwort: c '",
-    "Expected option a) at line 580, got: '                         b)                         c)                          '",
-    "Expected Richtige Antwort after image options at line 1105",
-    "Expected Richtige Antwort after image options at line 1105",
-    "Expected option b) at line 2865, got: '      c) '",
-    "Expected option b) at line 2865, got: '      c) '",
-    "Expected option a) at line 2865, got: '      c) '",
-    "Expected option a) at line 2866, got: '                                                d) '"
-  ]
+  "extraction_notes": []
 }
