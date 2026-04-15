@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="de-CH">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="theme-color" content="#f9f8f6" />
+  <meta name="description" content="Minimalistische Übung für den kantonalen Grundkenntnistest Zürich" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <title>Grundkenntnistest</title>
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/icons/icon-192.png" />
+  <link rel="apple-touch-icon" href="/icons/icon-192.png" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+
+<body>
+  <div class="app">
+    <!-- Zero UI Header -->
+    <header class="app-header">
+      <div class="logo">Kanton Zürich</div>
+      <div class="header-actions">
+        <button type="button" class="menu-trigger header-icon-btn hidden" id="btn-quiz-exit" aria-label="Übung beenden" title="Übung beenden">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <g transform="translate(24 0) scale(-1 1)">
+              <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+              <polyline points="16 17 21 12 16 7"></polyline>
+              <line x1="21" y1="12" x2="9" y2="12"></line>
+            </g>
+          </svg>
+        </button>
+        <button type="button" class="menu-trigger header-icon-btn hidden" id="btn-quiz-settings" aria-label="Übung einstellen" title="Übung einstellen">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="3"></circle>
+            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+          </svg>
+        </button>
+        <button type="button" class="menu-trigger" id="menu-trigger" aria-label="Menü öffnen">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+      </div>
+    </header>
+
+    <!-- Navigation Overlay -->
+    <div id="nav-overlay" class="nav-overlay">
+      <button type="button" class="menu-trigger nav-close" id="menu-close" aria-label="Menü schliessen">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      <a href="#" class="nav-link nav-link--quiz active" data-screen="quiz">Quiz</a>
+      <a href="#" class="nav-link nav-link--practice" data-screen="practice">Lernen</a>
+      <a href="#" class="nav-link nav-link--analyze" data-screen="analyze">Analyse</a>
+    </div>
+
+    <main id="app-content">
+      <p id="offline-badge" class="offline-badge hidden">Offline — Daten aus dem Cache</p>
+      <div id="load-error" class="error-banner hidden"></div>
+
+      <!-- QUIZ SELECTION SCREEN -->
+      <section id="screen-quiz" class="content-section">
+        <div class="hero">
+          <h1>Quiz</h1>
+          <p id="menu-meta">Fragen werden geladen…</p>
+        </div>
+
+        <div class="mode-grid">
+          <button type="button" class="card" id="btn-random" disabled>
+            <h3>Zufall</h3>
+            <p>50 Fragen aus allen Kategorien.</p>
+          </button>
+          <button type="button" class="card" id="btn-weighted" disabled>
+            <h3>Gewichtet</h3>
+            <p>Fokus auf neue & falsch beantwortete Fragen.</p>
+          </button>
+        </div>
+
+        <h2 class="section-title">Kategorien</h2>
+        <div id="category-mode-grid" class="mode-grid"></div>
+      </section>
+
+      <!-- PRACTICE SCREEN (PDFs, Katalog, Spicktettel) -->
+      <section id="screen-practice" class="content-section hidden">
+        <div class="hero">
+          <h1>Lernen</h1>
+          <p>Offizielle Unterlagen und kompakte Zusammenfassungen.</p>
+        </div>
+        
+        <div class="mode-grid">
+          <a href="uebersicht.html" class="card card-link">
+            <h3>Spickzettel</h3>
+            <p>Der Themenüberblick kompakt nach Kategorie.</p>
+          </a>
+          <a href="fragenkatalog.html" class="card card-link">
+            <h3>Online-Katalog</h3>
+            <p>Alle Fragen mit Markierung der richtigen Antwort.</p>
+          </a>
+        </div>
+
+        <h2 class="section-title">Original-PDFs</h2>
+        <div class="mode-grid">
+          <a href="sources/broschuere_einbuergerung_grundkenntnistest.pdf" target="_blank" rel="noopener" class="card card-link">
+            <h3>Info-Broschüre</h3>
+            <p>Offizielles Lernmaterial (PDF).</p>
+          </a>
+          <a href="sources/grundkenntnistest_kanton_zuerich.pdf" target="_blank" rel="noopener" class="card card-link">
+            <h3>PDF-Fragenkatalog</h3>
+            <p>Offizielle Liste aller Fragen.</p>
+          </a>
+        </div>
+      </section>
+
+      <!-- ANALYZE SCREEN -->
+      <section id="screen-analyze" class="content-section hidden">
+        <div class="hero">
+          <h1>Analyse</h1>
+          <p>Dein Fortschritt im Überblick.</p>
+        </div>
+
+        <div id="stats-runs-block" class="analyze-runs">
+          <h2 class="section-title analyze-runs-title">Durchgänge</h2>
+          <p id="stats-runs-hint" class="analyze-runs-hint">
+            Unter <strong>Durchgang wählen</strong> einen gespeicherten Lauf anzeigen (Zeile antippen für volle Frage).
+            <strong>Gesamt</strong> zeigt wieder die Fragenliste. Mit <strong>Alle Durchgänge löschen</strong> werden nur die Läufe entfernt.
+          </p>
+          <div class="analyze-runs-toolbar">
+            <div class="stats-toolbar-field analyze-runs-field">
+              <label class="stats-toolbar-label" for="stats-run-picker">Durchgang wählen</label>
+              <select
+                id="stats-run-picker"
+                class="stats-toolbar-select"
+                aria-describedby="stats-runs-hint"
+              ></select>
+            </div>
+          </div>
+          <p class="analyze-runs-actions">
+            <button type="button" class="btn-ghost" id="btn-runs-clear-all">Alle Durchgänge löschen</button>
+          </p>
+        </div>
+
+        <div id="stats-empty" class="stats-empty hidden"></div>
+
+        <div id="stats-global-panel" class="stats-global-panel">
+          <div id="stats-sparkline" class="stats-spark-matrix" role="img" aria-label="Antwortfolge je Frage als Kachelmatrix"></div>
+          <p id="stats-summary" class="stats-summary-line" aria-live="polite"></p>
+
+          <div id="stats-run-only-actions" class="stats-run-only-actions hidden">
+            <button type="button" class="btn-ghost stats-run-del" id="btn-delete-selected-run">
+              Diesen Durchgang löschen
+            </button>
+          </div>
+
+          <p id="stats-qlist-hint" class="stats-qlist-hint"></p>
+
+          <div id="stats-global-controls" class="stats-global-toolbar">
+            <h2 class="section-title stats-global-toolbar__title">Fragenliste</h2>
+            <div class="stats-global-toolbar__selects">
+              <div class="stats-toolbar-field">
+                <label class="stats-toolbar-label" for="stats-sort">Sortierung</label>
+                <select id="stats-sort" class="stats-toolbar-select">
+                  <option value="id" selected>Fragennummer</option>
+                  <option value="pct-asc">Quote (schlechteste zuerst)</option>
+                  <option value="pct-desc">Quote (beste zuerst)</option>
+                  <option value="attempts-desc">Meiste Versuche</option>
+                </select>
+              </div>
+              <div class="stats-toolbar-field">
+                <label class="stats-toolbar-label" for="stats-filter">Filter</label>
+                <select id="stats-filter" class="stats-toolbar-select">
+                  <option value="all">Alle</option>
+                  <option value="practiced">Geübt</option>
+                  <option value="weak">Schwach</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="stats-table-wrap">
+            <table id="stats-qlist-table" class="stats-table stats-qlist-table">
+              <thead class="stats-qlist-thead">
+                <tr>
+                  <th scope="col" class="stats-qcol-tile">Antworten</th>
+                  <th scope="col" class="stats-qcol-mark">✓ / ✗</th>
+                  <th scope="col" class="stats-qcol-text">Frage</th>
+                  <th scope="col" class="stats-qcol-num num">PDF-Nr.</th>
+                  <th scope="col" class="stats-qcol-pct num">Quote</th>
+                </tr>
+              </thead>
+              <tbody id="stats-tbody"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- QUIZ ACTIVE SCREEN -->
+      <section id="screen-quiz-active" class="content-section hidden" style="padding-top: 0">
+        <div class="quiz-top">
+          <span class="timer" id="quiz-timer">00:00</span>
+        </div>
+        
+        <div class="progress-bar">
+          <div class="progress-fill" id="progress-fill" style="width: 0%"></div>
+        </div>
+        <p id="quiz-progress-meta" class="quiz-progress-meta" aria-live="polite"></p>
+
+        <div class="question-wrap">
+          <h2 id="question-text" class="question-text"></h2>
+          <div id="question-image-wrap" class="hidden"></div>
+          <div id="options" class="options-list"></div>
+        </div>
+
+        <div id="feedback" class="feedback hidden"></div>
+        <div class="actions" style="margin-top: 2rem">
+          <button type="button" class="btn-primary hidden" id="btn-next" style="width: 100%; padding: 1.25rem;">Weiter</button>
+        </div>
+      </section>
+
+      <!-- RESULTS SCREEN -->
+      <section id="screen-results" class="content-section hidden">
+        <div class="hero" style="text-align: center;">
+          <h1>Ergebnis</h1>
+          <p class="big-stat" id="done-summary" style="font-size: 4rem; margin: 1rem 0;"></p>
+          <p id="done-detail"></p>
+        </div>
+        <button type="button" class="btn-primary" id="btn-done-menu" style="width: 100%; margin-top: 2rem;">Fertig</button>
+      </section>
+    </main>
+  </div>
+
+  <!-- Quiz settings (Modus / Auswertung) -->
+  <div id="quiz-settings-sheet" class="quiz-settings-sheet hidden" aria-hidden="true">
+    <div class="quiz-settings-backdrop" id="quiz-settings-backdrop"></div>
+    <div class="quiz-settings-panel" role="dialog" aria-modal="true" aria-labelledby="quiz-settings-title">
+      <div class="quiz-settings-head">
+        <h2 id="quiz-settings-title">Übung</h2>
+        <button type="button" class="menu-trigger" id="quiz-settings-close" aria-label="Schliessen">×</button>
+      </div>
+      <div class="quiz-settings-body">
+        <p class="quiz-settings-section-label">Modus</p>
+        <div class="quiz-settings-chips" role="group" aria-label="Modus">
+          <button type="button" class="quiz-chip" id="qs-play-quiz" data-play="quiz">Quiz</button>
+          <button type="button" class="quiz-chip" id="qs-play-training" data-play="continuous">Training</button>
+        </div>
+        <p class="quiz-settings-section-label">Auswertung</p>
+        <div class="quiz-settings-chips" id="qs-fb-chips" role="group" aria-label="Auswertung">
+          <button type="button" class="quiz-chip" id="qs-fb-each" data-fb="each">Sofort</button>
+          <button type="button" class="quiz-chip" id="qs-fb-end" data-fb="end">Am Ende</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- STATS MODAL -->
+  <div id="stats-modal" class="stats-modal hidden" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="stats-modal-inner content-section">
+      <button type="button" class="menu-trigger stats-modal-close" id="stats-modal-close" aria-label="Schliessen">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      <h2 id="stats-modal-title" class="stats-modal-heading">Frage</h2>
+      <div id="stats-modal-stem" class="stats-modal-stem"></div>
+      <div id="stats-modal-img-wrap" class="hidden"></div>
+      <div id="stats-modal-options" class="options-list"></div>
+    </div>
+  </div>
+
+  <script src="/app.js" defer></script>
+</body>
+
+</html>

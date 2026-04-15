@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="de-CH">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="theme-color" content="#f9f8f6" />
+  <meta name="description" content="Themenüberblick — kompakte Zusammenfassung für den Grundkenntnistest." />
+  <title>Themenüberblick</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png" />
+  <link rel="apple-touch-icon" href="icons/icon-192.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="page-standalone">
+  <div class="app">
+    <header class="app-header">
+      <div class="logo">Themenüberblick</div>
+      <a
+        href="index.html#practice"
+        class="menu-trigger menu-trigger--standalone-back"
+        aria-label="Zurück zu Lernen"
+        onclick="var m=document.getElementById('cheat-modal');if(m&amp;&amp;!m.classList.contains('hidden')){m.classList.add('hidden');m.setAttribute('aria-hidden','true');return false;}"
+      >
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M15 18l-6-6 6-6"></path>
+        </svg>
+      </a>
+    </header>
+
+    <main class="content-section cheat-wrap page-standalone-main">
+      <div id="cheat-load-error" class="error-banner hidden"></div>
+      <div class="hero page-standalone-hero">
+        <p id="cheat-meta" class="lead page-standalone-meta">Fragen werden geladen…</p>
+        <p class="page-standalone-lead">Tippe auf eine <strong>Nr.</strong>, um die volle Frage mit Antworten anzuzeigen.</p>
+      </div>
+
+      <nav id="cheat-jump" class="cheat-jump-tabs" aria-label="Kategorien"></nav>
+
+      <div id="cheat-root" class="cheat-root"></div>
+    </main>
+  </div>
+
+  <div id="cheat-modal" class="cheat-sheet-modal hidden" aria-hidden="true">
+    <button type="button" class="cheat-sheet-modal__backdrop" id="cheat-modal-backdrop" tabindex="-1" aria-label="Schliessen"></button>
+    <div class="cheat-sheet-modal__panel" role="dialog" aria-modal="true" aria-labelledby="cheat-modal-title">
+      <button type="button" class="menu-trigger cheat-sheet-modal__close" id="cheat-modal-close" aria-label="Schliessen">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      <h2 id="cheat-modal-title" class="cheat-sheet-modal__title">Frage</h2>
+      <div id="cheat-modal-stem" class="cheat-sheet-modal__stem"></div>
+      <div id="cheat-modal-img-wrap" class="cheat-sheet-modal__img-wrap hidden"></div>
+      <div id="cheat-modal-options" class="options-list cheat-sheet-modal__options"></div>
+    </div>
+  </div>
+
+  <script src="uebersicht.js" defer></script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="de-CH">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="theme-color" content="#f9f8f6" />
+  <meta name="description" content="Alle Fragen des kantonalen Grundkenntnistests Zürich." />
+  <title>Fragenkatalog</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png" />
+  <link rel="apple-touch-icon" href="icons/icon-192.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="page-standalone">
+  <div class="app">
+    <header class="app-header">
+      <div class="logo">Fragenkatalog</div>
+      <a href="index.html#practice" class="menu-trigger menu-trigger--standalone-back" aria-label="Zurück zu Lernen">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M15 18l-6-6 6-6"></path>
+        </svg>
+      </a>
+    </header>
+
+    <main class="content-section page-standalone-main">
+      <div id="catalog-load-error" class="error-banner hidden"></div>
+      <div class="hero page-standalone-hero">
+        <p id="catalog-meta" class="page-standalone-meta">Fragen werden geladen…</p>
+        <button type="button" class="btn-ghost catalog-answer-mode-btn" id="btn-catalog-answer-mode">Alle Antworten einblenden</button>
+      </div>
+
+      <div class="catalog-tabs-container">
+        <div id="catalog-tabs" class="catalog-tabs-row"></div>
+      </div>
+
+      <div id="catalog-panels" class="catalog-panels-root"></div>
+    </main>
+  </div>
+
+  <script src="fragenkatalog.js" defer></script>
+</body>
+
+</html>
