@@ -777,10 +777,10 @@
               "correct_answer": "c",
               "options_are_images": true,
               "images": {
-                "a": "images/page013_img01.png",
-                "b": "images/page013_img03.png",
-                "c": "images/page013_img05.png",
-                "d": "images/page013_img07.png"
+                "a": "question-images/55_a.png",
+                "b": "question-images/55_b.png",
+                "c": "question-images/55_c.png",
+                "d": "question-images/55_d.png"
               },
               "number_in_pdf": 55,
               "page": 13,
@@ -1559,10 +1559,10 @@
               "correct_answer": "c",
               "options_are_images": true,
               "images": {
-                "a": "images/page025_img03.png",
-                "b": "images/page025_img02.png",
-                "c": "images/page025_img04.png",
-                "d": "images/page025_img01.png"
+                "a": "question-images/110_a.png",
+                "b": "question-images/110_b.png",
+                "c": "question-images/110_c.png",
+                "d": "question-images/110_d.png"
               },
               "number_in_pdf": 110,
               "page": 25,
@@ -4139,10 +4139,10 @@
               "correct_answer": "b",
               "options_are_images": true,
               "images": {
-                "a": "images/page065_img08.png",
-                "b": "images/page065_img06.png",
-                "c": "images/page065_img04.png",
-                "d": "images/page065_img02.png"
+                "a": "question-images/289_a.png",
+                "b": "question-images/289_b.png",
+                "c": "question-images/289_c.png",
+                "d": "question-images/289_d.png"
               },
               "number_in_pdf": 289,
               "page": 65,
