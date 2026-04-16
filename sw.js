@@ -4,7 +4,7 @@
  * project sites (e.g. /repo-name/) as well as at domain root.
  * Bump CACHE_VERSION after changing cached assets.
  */
-const CACHE_VERSION = "grundkenntnistest-v40";
+const CACHE_VERSION = "grundkenntnistest-v41";
 
 /** Base URL of the directory containing sw.js (trailing slash). */
 const BASE = new URL("./", self.location.href);
