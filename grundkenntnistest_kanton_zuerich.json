@@ -769,10 +769,10 @@
             {
               "question": "Welche ist die Schweizer Nationalfahne?",
               "options": {
-                "a": null,
-                "b": null,
-                "c": null,
-                "d": null
+                "a": "question-images/55_a.png",
+                "b": "question-images/110_b.png",
+                "c": "question-images/110_c.png",
+                "d": "question-images/55_d.png"
               },
               "correct_answer": "c",
               "options_are_images": true,
